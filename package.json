@@ -1,0 +1,36 @@
+{
+  "author": "James Sapara <jsapara@gmail.com>",
+  "name": "connect-handlebars",
+  "description": "Connect middleware for Handlebars",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/interlock/connect-handlebars.git"
+  },
+  "keywords": [
+    "Handlebars",
+    "Connect",
+    "Express",
+    "middleware"
+  ],
+  "homepage": "http://github.com/interlock/connect-handlebars",
+  "bugs": {
+    "url": "https://github.com/interlock/connect-handlebars/issues"
+  },
+  "main": "lib/connect-handlebars.js",
+  "engines": {
+    "node": "*"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/interlock/connect-lesscss/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "handlebars": "> 1.0.0"
+  },
+  "devDependencies": {
+    "connect": "*"
+  }
+}
