@@ -13,10 +13,10 @@ middleware that pre-compiles [handlebars](http://handlebarsjs.com/)) to JS.
 
 Example using express:
 
-    less = require('connect-handlebars')
+    connect_handlebars = require('connect-handlebars')
     app = require('express').createServer()
 
-    app.use("/templates.js", less("path/to/handles/templates", {
+    app.use("/templates.js", connect_handlebars("path/to/handles/templates", {
     }));
 
     app.listen(80);
