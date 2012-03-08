@@ -11,12 +11,13 @@ middleware that pre-compiles [handlebars](http://handlebarsjs.com/) to JS.
 
 # Usage
 
-Example using express:
+Example in express:
 
-    connect_handlebars = require('connect-handlebars')
+    var connect_handlebars = require('connect-handlebars')
     app = require('express').createServer()
 
     app.use("/templates.js", connect_handlebars("path/to/handles/templates", {
+      exts: ['hbs','handlebars']
     }));
 
     app.listen(80);
@@ -25,4 +26,6 @@ The middleware builder takes two arguments `source` and `options`
 
 * `source`: The path to the root directory of .handlebars files to compile.
 * `options`: Object of options with the following keys
+  * `exts`: String|Array of file extensions to pre-compille. e.g. 'handlebars or ['handlebars','hbs']
+
 
