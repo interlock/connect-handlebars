@@ -1,5 +1,5 @@
 {
-  "author": "James Sapara <jsapara@gmail.com>",
+  "author": "James Sapara <jsapara@slicedprojects.ca>",
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
   "version": "0.0.3",
