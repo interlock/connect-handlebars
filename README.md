@@ -31,4 +31,8 @@ The middleware builder takes two arguments `source` and `options`
   * `recursive`: bool indicating if sub directories are searched (default: true)
   * `encoding`: String indicating the encoding to use (default: utf8)
 
+# Testing
 
+  npm test
+
+Specs for the Jasmine tests are in ./specs
