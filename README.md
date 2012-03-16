@@ -26,6 +26,9 @@ The middleware builder takes two arguments `source` and `options`
 
 * `source`: The path to the root directory of .handlebars files to compile.
 * `options`: Object of options with the following keys
-  * `exts`: String|Array of file extensions to pre-compille. e.g. 'handlebars or ['handlebars','hbs']
+  * `exts`: String|Array of file extensions to pre-compille. (default: ['handlebars'])
+  * `exts_re`: RegExp instance for matching file extensions you want to match. Overrides `exts`
+  * `recursive`: bool indicating if sub directories are searched (default: true)
+  * `encoding`: String indicating the encoding to use (default: utf8)
 
 

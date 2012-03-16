@@ -31,6 +31,10 @@
     "handlebars": ">= 1.0.5beta"
   },
   "devDependencies": {
-    "connect": "*"
+    "connect": "*",
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "test": "jasmine-node ./specs"
   }
 }
