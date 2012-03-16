@@ -61,3 +61,49 @@ describe('process template', function() {
        expect(output.length).toBe(1);
    });
 });
+
+describe('connect function',function() {
+    var functionInstance;
+    // mock ServerResponse
+    var Res = function() {};
+    Res.prototype.writeHead = function(code,head) {};
+    Res.prototype.end = function(out,encoding) {};
+    var res;
+    
+    // mock ServerRequest
+    var Req = function() {};
+    var req;
+    
+    var next;
+    
+    beforeEach(function() {
+        functionInstance = ConnectHandlebars(
+            __dirname + '/templates',
+            {
+                encoding: 'ascii',
+            }
+        );
+        res = new Res();
+        req = new Req();
+        
+        next = jasmine.createSpy('next');
+    });
+    
+    it('does not call next', function() {
+        functionInstance(req,res,next);
+        expect(next).not.toHaveBeenCalled();
+    });
+    
+    it('respects encoding in header', function() {
+        spyOn(res,'writeHead');
+        functionInstance(req,res,next);
+        expect(res.writeHead).toHaveBeenCalledWith(200,{ 'Content-Type' : 'text/javascript; chartset=ascii'});
+    });
+    
+    it('respects encoding on end write', function() {
+        spyOn(res,'end');
+        functionInstance(req,res,next);
+        expect(res.end.mostRecentCall.args[1]).toBe('ascii');
+    });
+    
+});
