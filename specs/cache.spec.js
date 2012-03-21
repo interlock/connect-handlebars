@@ -6,7 +6,7 @@ describe('cache',function() {
     var file_template = templates_dir + '/other.hbs';
     var options;
     beforeEach(function() {
-        options = {cache: true, timestamps: {}, exts: ['hbs','handlebars'] };
+        options = {timestamps: {}, exts: ['hbs','handlebars'] };
     });
     
     it('stores the timestamp for templates', function() { 
@@ -45,12 +45,13 @@ describe('cache',function() {
         expect(options.timestamps['other.hbs']._template).not.toBe('foo');     
     });
     
-    it('has caching off by default', function() {
+    it('can turn caching off', function() {
         delete(options.cache);
         var output = [];
+        options.cache = false;
         options.timestamps['other.hbs'] = { ts: new Date(1999,1,1), _template: 'foo' };
         lib._processFile(options, file_template, file_template, templates_dir, lib, output, { mtime: new Date(1999,1,1) } );       
-        expect(options.timestamps['other.hbs']._template).not.toBe('foo');
+        expect(options.timestamps['other.hbs']._template).toBe('foo');
     });
     
 });

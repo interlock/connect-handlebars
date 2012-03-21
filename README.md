@@ -30,6 +30,7 @@ The middleware builder takes two arguments `source` and `options`
   * `exts_re`: RegExp instance for matching file extensions you want to match. Overrides `exts`
   * `recursive`: bool indicating if sub directories are searched (default: true)
   * `encoding`: String indicating the encoding to use (default: utf8)
+  * `cache`: boolean indicating if you want to use caching (default: true)
 
 # Testing
 
