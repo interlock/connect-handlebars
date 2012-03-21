@@ -1,6 +1,15 @@
 {
-  "author": "James Sapara <jsapara@slicedprojects.ca>",
-  "contributors": [ 
+  "author": {
+    "name": "James Sapara",
+    "email": "jsapara@slicedprojects.ca",
+    "url": "http://github.com/interlock"
+  },
+  "contributors": [
+    {
+      "name" : "Dave Mosher",
+      "email": "davidmosher@gmail.com",
+      "url": "http://github.com/davemo"
+    } 
   ],
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
