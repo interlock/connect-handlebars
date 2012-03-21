@@ -5,7 +5,6 @@
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
   "version": "0.0.5",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/interlock/connect-handlebars.git"
