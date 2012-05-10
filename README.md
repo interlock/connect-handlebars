@@ -24,7 +24,7 @@ Example in express:
 
 The middleware builder takes two arguments `source` and `options`
 
-* `source`: The path to the root directory of .handlebars files to compile.
+* `source`: The absolute path to the root directory of .handlebars files to compile.
 * `options`: Object of options with the following keys
   * `exts`: String|Array of file extensions to pre-compille. (default: ['handlebars'])
   * `exts_re`: RegExp instance for matching file extensions you want to match. Overrides `exts`
