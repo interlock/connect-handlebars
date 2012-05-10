@@ -16,7 +16,7 @@ Example in express:
     var connect_handlebars = require('connect-handlebars')
     app = require('express').createServer()
 
-    app.use("/templates.js", connect_handlebars("path/to/handles/templates", {
+    app.use("/templates.js", connect_handlebars(__dirname + "/path/to/templates", {
       exts: ['hbs','handlebars']
     }));
 
