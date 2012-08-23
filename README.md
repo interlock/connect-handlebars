@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/interlock/connect-handlebars.png)](http://travis-ci.org/interlock/connect-handlebars)
 # Introduction
 
 `connect-handlebars` is [Connect](http://www.senchalabs.org/connect/)
