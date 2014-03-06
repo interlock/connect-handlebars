@@ -13,7 +13,7 @@
   ],
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "git://github.com/interlock/connect-handlebars.git"
