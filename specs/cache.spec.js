@@ -51,7 +51,7 @@ describe('cache',function() {
         options.cache = false;
         options.timestamps['other.hbs'] = { ts: new Date(1999,1,1), _template: 'foo' };
         lib._processFile(options, file_template, file_template, templates_dir, lib, output, { mtime: new Date(1999,1,1) } );       
-        expect(options.timestamps['other.hbs']._template).toBe('foo');
+        expect(options.timestamps['other.hbs']._template).not.toBe('foo');
     });
     
 });
