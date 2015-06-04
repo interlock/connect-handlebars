@@ -9,7 +9,7 @@
       "name" : "Dave Mosher",
       "email": "davidmosher@gmail.com",
       "url": "http://github.com/davemo"
-    } 
+    }
   ],
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
@@ -39,7 +39,7 @@
     }
   ],
   "dependencies": {
-    "handlebars": "~1.3.0"
+    "handlebars": "~3.0.3"
   },
   "devDependencies": {
     "connect": "*",
