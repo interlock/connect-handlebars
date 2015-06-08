@@ -17,9 +17,7 @@ Example in express:
     var connect_handlebars = require('connect-handlebars')
     app = require('express').createServer()
 
-    app.use("/templates.js", connect_handlebars(__dirname + "/path/to/templates", {
-      exts: ['hbs','handlebars']
-    }));
+    app.use("/templates.js", connect_handlebars(__dirname + "/path/to/templates"));
 
     app.listen(80);
 
@@ -27,7 +25,7 @@ The middleware builder takes two arguments `source` and `options`
 
 * `source`: The absolute path to the root directory of .handlebars files to compile.
 * `options`: Object of options with the following keys
-  * `exts`: String|Array of file extensions to pre-compille. (default: ['handlebars'])
+  * `exts`: String|Array of file extensions to pre-compille. (default: ['hbs','handlebars'])
   * `exts_re`: RegExp instance for matching file extensions you want to match. Overrides `exts`
   * `recursive`: bool indicating if sub directories are searched (default: true)
   * `encoding`: String indicating the encoding to use (default: utf8)

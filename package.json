@@ -9,11 +9,16 @@
       "name" : "Dave Mosher",
       "email": "davidmosher@gmail.com",
       "url": "http://github.com/davemo"
+    },
+    {
+      "name" : "Igor Mucsicska",
+      "email": "mucsi_96@yahoo.com",
+      "url": "http://github.com/mucsi96"
     }
   ],
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/interlock/connect-handlebars.git"
