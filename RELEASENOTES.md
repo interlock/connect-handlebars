@@ -11,3 +11,7 @@
 ## 3.0.1
 
 * hbs added to default extensions
+
+## 3.0.2
+
+* Fixing middleware capability to be used more than once
