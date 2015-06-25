@@ -14,4 +14,4 @@
 
 ## 3.0.2
 
-* Fixing middleware capability to be used more that once
+* Fixing middleware capability to be used more than once
