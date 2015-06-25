@@ -1,17 +1,24 @@
 # Release Notes
 
-## 0.1.0
+## 3.1.0
 
-* Fixed caching template flag default assignment
-
-## 3.0.0
-
-* Updated to handlebars 3.0.3
+* Fixing middleware capability to be used more than once
+* Dropped support for NodeJS 0.8
 
 ## 3.0.1
 
 * hbs added to default extensions
 
-## 3.0.2
+## 3.0.0
 
-* Fixing middleware capability to be used more than once
+* Updated to handlebars 3.0.3
+
+## 0.1.0
+
+* Fixed caching template flag default assignment
+
+
+
+
+
+
