@@ -1,5 +1,10 @@
 # Release Notes
 
+## 4.0.0
+
+* Updated to handlebars 4.0.5
+* Added MIT license to package.json
+
 ## 3.1.0
 
 * Fixing middleware capability to be used more than once
@@ -16,9 +21,3 @@
 ## 0.1.0
 
 * Fixed caching template flag default assignment
-
-
-
-
-
-
