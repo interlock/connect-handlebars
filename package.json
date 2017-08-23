@@ -16,6 +16,7 @@
       "url": "http://github.com/mucsi96"
     }
   ],
+  "license": "MIT",
   "name": "connect-handlebars",
   "description": "Connect middleware for Handlebars",
   "version": "3.1.0",
