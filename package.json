@@ -6,12 +6,12 @@
   },
   "contributors": [
     {
-      "name" : "Dave Mosher",
+      "name": "Dave Mosher",
       "email": "davidmosher@gmail.com",
       "url": "http://github.com/davemo"
     },
     {
-      "name" : "Igor Mucsicska",
+      "name": "Igor Mucsicska",
       "email": "mucsi_96@yahoo.com",
       "url": "http://github.com/mucsi96"
     }
@@ -35,7 +35,7 @@
   },
   "main": "lib/connect-handlebars.js",
   "engines": {
-    "node": "*"
+    "node": ">=0.10.0"
   },
   "licenses": [
     {
@@ -44,9 +44,8 @@
     }
   ],
   "dependencies": {
-    "handlebars": "~3.0.3"
+    "handlebars": "~4.0.5"
   },
-  "engines" : { "node" : ">=0.10.0" },
   "devDependencies": {
     "connect": "*",
     "jasmine-node": "*"
